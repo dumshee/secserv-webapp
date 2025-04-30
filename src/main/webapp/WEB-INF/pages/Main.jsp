@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Secret Service</title>
-    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/Main.css?v=2">
 </head>
 <body>
     <header>
@@ -16,8 +16,9 @@
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="<%= request.getContextPath() %>/MyProfile">My Profile</a></li>
                 <li><a href="<%= request.getContextPath() %>/register">Register</a></li>
+                <li><a href="<%= request.getContextPath() %>/login">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -60,7 +61,27 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Secret Service. All rights reserved.</p>
-    </footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">our Team</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">SECserv</span></p>
+    </div>
+</footer>
 </body>
 </html>
